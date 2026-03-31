@@ -1,0 +1,102 @@
+Erstelle eine moderne, luxuriöse und höchst professionelle Website für ein Event Dekorationsunternehmen.
+
+Wichtiger Fokus:
+Das Unternehmen ist spezialisiert auf die stilvolle Dekoration von Eventhallen, vor allem für Hochzeiten. Zusätzlich bietet das Unternehmen Dekorationen für Geburtstage, Jubiläen, Verlobungen, Firmenfeiern, Taufen und weitere besondere Anlässe an.
+
+Die Website soll sehr hochwertig wirken, vertrauenswürdig, elegant, emotional und professionell. Der Stil soll modern, edel und exklusiv sein. Bitte entwickle die Seite so, dass sie optisch premium aussieht und potenzielle Kunden sofort das Gefühl bekommen, mit einem seriösen und erfahrenen Anbieter zu arbeiten.
+
+Design Anforderungen:
+Nutze ein elegantes Farbschema mit Weiß, Creme, Beige, Gold und sanften dunklen Akzenten
+Große hochwertige Hero Section mit emotionalem Bild oder Video von einer wunderschön dekorierten Hochzeitshalle
+Luxuriöse Typografie
+Viel Weißraum
+Sanfte Animationen
+Perfekt responsive für Smartphone, Tablet und Desktop
+Sehr moderne Benutzeroberfläche mit klarer Struktur
+Die Seite soll hochwertiger aussehen als eine gewöhnliche Agentur Website
+
+Struktur der Website:
+Startseite
+Über uns
+Leistungen
+Galerie
+Ablauf
+Kundenstimmen
+Kontakt
+
+Inhalte der Startseite:
+Eine starke Hero Section mit einer professionellen Headline wie:
+Wir verwandeln Eventhallen in unvergessliche Erlebnisse
+oder
+Exklusive Dekoration für Hochzeiten und besondere Momente
+
+Dazu ein überzeugender Untertitel, der erklärt, dass wir uns auf die Dekoration von Hochzeitshallen und Eventlocations spezialisiert haben und auch Geburtstage, Jubiläen und weitere Feiern stilvoll gestalten.
+
+Füge einen klaren Call to Action ein:
+Jetzt Anfrage senden
+Kostenlos beraten lassen
+Termin anfragen
+
+Leistungsbereich:
+Zeige professionell unsere Leistungen:
+Hochzeitsdekoration
+Dekoration für Geburtstage
+Jubiläen und Familienfeiern
+Verlobungen und besondere Anlässe
+Tischdekoration
+Bühnen und Hallendekoration
+Blumenarrangements
+Licht und Ambiente Konzepte
+Individuelle Dekorationskonzepte nach Kundenwunsch
+
+Über uns Bereich:
+Schreibe einen professionellen Text über ein Unternehmen, das mit Leidenschaft, Stilgefühl und Liebe zum Detail Eventhallen dekoriert. Der Fokus liegt auf emotionalen Momenten, eleganter Gestaltung und perfekter Umsetzung. Der Text soll Vertrauen schaffen und hochwertig klingen.
+
+Galerie:
+Erstelle einen hochwertigen Galerie Bereich für dekorierte Hochzeitshallen, elegante Tischdekorationen und festliche Eventräume. Die Galerie soll modern wirken und sich gut präsentieren.
+
+Ablauf Bereich:
+Zeige den Ablauf in klaren Schritten:
+Erstgespräch
+Planung und Konzept
+Individuelle Gestaltung
+Aufbau und Dekoration
+Perfekte Umsetzung am Eventtag
+
+Kundenstimmen:
+Füge stilvolle Testimonials ein, die glaubwürdig und hochwertig formuliert sind. Die Kunden sollen begeistert von der eleganten Dekoration, der Zuverlässigkeit und dem professionellen Service sprechen.
+
+Kontaktbereich:
+Kontaktformular mit Feldern für:
+Name
+E Mail
+Telefon
+Art des Events
+Datum
+Location
+Nachricht
+
+Zusätzlich:
+WhatsApp Button
+Telefonnummer
+E Mail Adresse
+Social Media Links
+
+Wichtige technische Anforderungen:
+Nutze modernes Frontend Design
+Sauberer Code
+Schnelle Ladezeit
+SEO freundlich
+Professionelle Animationen
+Responsive Navigation
+Sticky Header
+Eleganter Footer
+Hover Effekte
+Saubere Sections mit starker visueller Hierarchie
+
+Zusätzliche Bitte:
+Schreibe alle Texte direkt professionell aus
+Nutze hochwertiges deutsches Wording
+Keine Platzhalter Texte wie Lorem Ipsum
+Die Website soll direkt wie eine echte Premium Marke wirken
+Bitte integriere überzeugende Marketing Texte, damit Besucher Vertrauen gewinnen und eine Anfrage senden möchten

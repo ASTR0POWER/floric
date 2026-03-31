@@ -1,0 +1,68 @@
+uploads = []
+outputs = []
+
+[[generated]]
+id = "scSmGcPIU1jFN3rf8bRTF"
+uri = "file://artifacts/floric/public/hero.png"
+type = "image"
+title = "Hero wedding hall"
+
+[[generated]]
+id = "XAT-Pguw5-HDNzAUs6LWf"
+uri = "file://artifacts/floric/public/service-1.png"
+type = "image"
+title = "Table decoration"
+
+[[generated]]
+id = "Y1eBE82duvmiZvl6Jq2SC"
+uri = "file://artifacts/floric/public/service-2.png"
+type = "image"
+title = "Floral arch"
+
+[[generated]]
+id = "dGMDym9eDVFijiWf5Dhtt"
+uri = "file://artifacts/floric/public/service-3.png"
+type = "image"
+title = "Mood lighting"
+
+[[generated]]
+id = "CPxnFuGZLwFPxLUhAqsn3"
+uri = "file://artifacts/floric/public/about.png"
+type = "image"
+title = "Event designer"
+
+[[generated]]
+id = "42hDrBu_TOonipGFMVWys"
+uri = "file://artifacts/floric/public/gallery-1.png"
+type = "image"
+title = "Gallery chandelier"
+
+[[generated]]
+id = "WijqwMa5CVqzirLuL37Yv"
+uri = "file://artifacts/floric/public/gallery-2.png"
+type = "image"
+title = "Gallery rings"
+
+[[generated]]
+id = "XYCkE-9YYW6nV7ykRITPE"
+uri = "file://artifacts/floric/public/gallery-3.png"
+type = "image"
+title = "Gallery floral ceiling"
+
+[[generated]]
+id = "qufpwBaIKuZwAJPnC83m3"
+uri = "file://artifacts/floric/public/gallery-4.png"
+type = "image"
+title = "Gallery champagne"
+
+[[generated]]
+id = "QnaIf4ZnWd9NDSfHDJw4X"
+uri = "file://artifacts/floric/public/gallery-5.png"
+type = "image"
+title = "Gallery outdoor"
+
+[[generated]]
+id = "FwB8rbQh5Rcq32c738rUa"
+uri = "file://artifacts/floric/public/gallery-6.png"
+type = "image"
+title = "Gallery candelabras"
