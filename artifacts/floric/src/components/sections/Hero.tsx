@@ -12,7 +12,7 @@ export function Hero() {
     <section className="relative h-[100dvh] w-full flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0 w-full h-full">
         <img
-          src="/hero.png"
+          src="/hero.jpg"
           alt="Elegante Hochzeitsdekoration"
           className="w-full h-full object-cover object-center"
         />

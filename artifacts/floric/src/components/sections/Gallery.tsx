@@ -2,12 +2,12 @@ import { useScrollFade } from "@/hooks/use-scroll-fade";
 import { useLanguage } from "@/context/LanguageContext";
 
 const galleryImages = [
-  { src: "/gallery-1.png", alt: "Chandelier", style: "md:col-span-2 md:row-span-2 aspect-square md:aspect-auto" },
-  { src: "/gallery-2.png", alt: "Rings", style: "aspect-[4/3]" },
-  { src: "/gallery-3.png", alt: "Floral ceiling", style: "aspect-[3/4]" },
-  { src: "/gallery-4.png", alt: "Champagne", style: "aspect-[4/3]" },
-  { src: "/gallery-6.png", alt: "Candelabras", style: "aspect-square" },
-  { src: "/gallery-5.png", alt: "Outdoor setup", style: "md:col-span-2 aspect-[16/9]" },
+  { src: "/gallery-1.jpg", alt: "Blumencenterpiece", style: "md:col-span-2 md:row-span-2 aspect-square md:aspect-auto" },
+  { src: "/gallery-2.jpg", alt: "Rosengesteck", style: "aspect-[4/3]" },
+  { src: "/gallery-3.jpg", alt: "Sektempfang", style: "aspect-[4/3]" },
+  { src: "/gallery-4.jpg", alt: "Herzkerze", style: "aspect-square" },
+  { src: "/gallery-5.jpg", alt: "Candy Bar", style: "aspect-[4/3]" },
+  { src: "/gallery-room.jpg", alt: "Hochzeitssaal Komplett", style: "md:col-span-2 aspect-[16/9]" },
 ];
 
 export function Gallery() {

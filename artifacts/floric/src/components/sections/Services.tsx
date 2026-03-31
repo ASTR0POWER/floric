@@ -1,7 +1,7 @@
 import { useScrollFade } from "@/hooks/use-scroll-fade";
 import { useLanguage } from "@/context/LanguageContext";
 
-const serviceImages = ["/service-2.png", "/service-1.png", "/service-3.png"];
+const serviceImages = ["/service-1.jpg", "/service-2.jpg", "/service-3.jpg"];
 
 export function Services() {
   const { domRef, isVisible } = useScrollFade();
