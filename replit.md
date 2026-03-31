@@ -16,10 +16,22 @@ pnpm workspace monorepo using TypeScript. Each package manages its own dependenc
 - **API codegen**: Orval (from OpenAPI spec)
 - **Build**: esbuild (CJS bundle)
 
+## Render Deployment
+
+The project includes a `render.yaml` Blueprint at the repository root for one-click deploy to [Render.com](https://render.com).
+
+- **Build command**: `npm install -g pnpm@latest && pnpm install --frozen-lockfile=false && pnpm --filter @workspace/floric build`
+- **Publish directory**: `artifacts/floric/dist/public`
+- **Type**: Static site with SPA rewrite rule (`/* → /index.html`)
+- **Env vars set automatically**: `NODE_ENV=production`, `BASE_PATH=/`
+
+To deploy: push to GitHub → connect repo on Render → Render detects `render.yaml` automatically.
+
 ## Structure
 
 ```text
 artifacts-monorepo/
+├── render.yaml             # Render Blueprint for one-click deploy
 ├── artifacts/              # Deployable applications
 │   ├── api-server/         # Express API server
 │   └── floric/             # Floric luxury event decoration website (React + Vite)

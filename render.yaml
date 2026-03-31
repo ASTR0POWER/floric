@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: floric-website
+    env: static
+    buildCommand: npm install -g pnpm@latest && pnpm install --frozen-lockfile=false && pnpm --filter @workspace/floric build
+    staticPublishPath: artifacts/floric/dist/public
+    pullRequestPreviewsEnabled: false
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: BASE_PATH
+        value: /
