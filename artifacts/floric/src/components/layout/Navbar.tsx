@@ -27,12 +27,11 @@ export function Navbar() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 border-b ${
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 border-b backdrop-blur-md ${
         isScrolled
-          ? "bg-background/95 backdrop-blur-md border-border py-4 shadow-sm"
-          : "border-transparent py-6"
+          ? "bg-background/80 border-border py-4 shadow-sm"
+          : "bg-black/30 border-white/10 py-6"
       }`}
-      style={!isScrolled ? { background: "linear-gradient(to bottom, rgba(0,0,0,0.55) 0%, transparent 100%)" } : {}}
     >
       <div className="container mx-auto px-6 flex items-center justify-between">
         <Link
