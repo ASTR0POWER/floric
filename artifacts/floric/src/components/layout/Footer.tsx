@@ -13,9 +13,17 @@ export function Footer() {
             <button onClick={scrollToTop} className="text-4xl font-serif font-semibold tracking-wider text-primary mb-6 block text-left" data-testid="footer-logo">
               FLORIC
             </button>
-            <p className="text-white/60 font-light max-w-md leading-relaxed">
+            <p className="text-white/60 font-light max-w-md leading-relaxed mb-6">
               Exklusive Eventdekoration und atemberaubendes Hochzeitsdesign. Wir kreieren Räume, die Geschichten erzählen und Emotionen wecken.
             </p>
+            <div className="text-white/50 font-light text-sm space-y-1">
+              <p>Papenweg 28 · 59071 Hamm · Deutschland</p>
+              <p>
+                <a href="tel:+4915733195342" className="hover:text-white transition-colors">+49 (0) 15733 195342</a>
+                {" · "}
+                <a href="mailto:kontakt@floric.de" className="hover:text-white transition-colors">kontakt@floric.de</a>
+              </p>
+            </div>
           </div>
           
           <div>

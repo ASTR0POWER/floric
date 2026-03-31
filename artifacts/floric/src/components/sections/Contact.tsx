@@ -68,20 +68,24 @@ export function Contact() {
 
             <div className="space-y-8">
               <div>
-                <h4 className="font-serif text-xl mb-2">Studio</h4>
-                <p className="text-muted-foreground font-light">Königsallee 42<br/>40212 Düsseldorf<br/>Deutschland</p>
+                <h4 className="font-serif text-xl mb-2">Adresse</h4>
+                <p className="text-muted-foreground font-light">Papenweg 28<br/>59071 Hamm<br/>Deutschland</p>
               </div>
               
               <div>
                 <h4 className="font-serif text-xl mb-2">Kontakt</h4>
-                <p className="text-muted-foreground font-light mb-1">T: +49 (0) 123 456 789</p>
-                <p className="text-muted-foreground font-light">E: atelier@floric.de</p>
+                <p className="text-muted-foreground font-light mb-1">
+                  T: <a href="tel:+4915733195342" className="hover:text-primary transition-colors" data-testid="link-phone">+49 (0) 15733 195342</a>
+                </p>
+                <p className="text-muted-foreground font-light">
+                  E: <a href="mailto:kontakt@floric.de" className="hover:text-primary transition-colors" data-testid="link-email">kontakt@floric.de</a>
+                </p>
               </div>
               
               <button 
                 className="flex items-center gap-3 text-primary hover:text-foreground transition-colors duration-300 mt-8 group"
                 data-testid="btn-whatsapp"
-                onClick={() => window.open('https://wa.me/49123456789', '_blank')}
+                onClick={() => window.open('https://wa.me/4915733195342', '_blank')}
               >
                 <span className="w-10 h-10 rounded-full border border-primary flex items-center justify-center group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
                   <svg viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5">
