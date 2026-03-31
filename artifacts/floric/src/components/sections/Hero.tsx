@@ -26,12 +26,12 @@ export function Hero() {
         ref={domRef as any}
         className={`relative z-10 text-center text-white px-6 max-w-5xl mx-auto flex flex-col items-center mt-20 ${isVisible ? 'fade-in-section is-visible' : 'fade-in-section'}`}
       >
-        <span className="text-primary uppercase tracking-[0.3em] mb-6 text-sm md:text-base font-medium">Exklusives Eventdesign</span>
+        <span className="text-primary uppercase tracking-[0.3em] mb-6 text-sm md:text-base font-medium">Exklusives Eventdesign · Hamm &amp; Umgebung</span>
         <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif font-medium leading-tight mb-8 drop-shadow-lg">
           Wir verwandeln Eventhallen in <i className="text-primary font-serif">unvergessliche</i> Erlebnisse
         </h1>
         <p className="text-lg md:text-xl text-white/90 max-w-2xl font-light leading-relaxed mb-12 drop-shadow">
-          Floric steht für atemberaubendes Hochzeitsdesign und luxuriöse Dekoration. Wir kreieren emotionale Momente, die für die Ewigkeit bestimmt sind – mit höchstem Anspruch an Perfektion.
+          Floric steht für atemberaubendes Hochzeitsdesign und luxuriöse Eventdekoration in Hamm und der gesamten Region Westfalen. Wir kreieren emotionale Momente, die für die Ewigkeit bestimmt sind – mit höchstem Anspruch an Perfektion.
         </p>
         <div className="flex flex-col sm:flex-row gap-6">
           <button 

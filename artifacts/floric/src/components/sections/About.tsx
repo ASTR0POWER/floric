@@ -29,10 +29,10 @@ export function About() {
             </h2>
             <div className="space-y-6 text-muted-foreground font-light text-lg leading-relaxed">
               <p>
-                Floric wurde aus einer tiefen Leidenschaft für Ästhetik und räumliche Harmonie geboren. Wir glauben daran, dass ein Raum nicht nur dekoriert, sondern transformiert werden muss.
+                Floric wurde aus einer tiefen Leidenschaft für Ästhetik und räumliche Harmonie geboren. Als Eventdekoration mit Herz und Sitz in Hamm betreuen wir Hochzeiten, Feiern und besondere Anlässe in der gesamten Region Westfalen – von Dortmund über Soest bis Münster.
               </p>
               <p>
-                Unser Team aus erfahrenen Designern und Floristen arbeitet mit einer fast obsessiven Liebe zum Detail. Von der Auswahl der feinsten Blüten bis zur exakten Positionierung jedes einzelnen Kerzenleuchters überlassen wir nichts dem Zufall.
+                Wir arbeiten mit einer fast obsessiven Liebe zum Detail. Von der Auswahl der feinsten Blüten bis zur exakten Positionierung jedes einzelnen Kerzenleuchters überlassen wir nichts dem Zufall. Jede Location in Hamm und Umgebung kennen wir genau – und wissen, wie wir sie in etwas Unvergessliches verwandeln.
               </p>
               <p>
                 Für uns ist Eleganz keine Frage des Budgets, sondern eine Philosophie der Reduktion auf das Wesentliche und der absoluten Hingabe an die Schönheit des Moments.
