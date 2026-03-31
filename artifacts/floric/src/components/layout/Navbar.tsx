@@ -90,14 +90,16 @@ export function Navbar() {
       </header>
 
       {mobileOpen && (
-        <div className="fixed inset-0 z-40 bg-background/98 backdrop-blur-lg flex flex-col items-center justify-center gap-10 md:hidden">
-          <button onClick={() => scrollToSection("leistungen")} className="text-2xl font-serif text-foreground hover:text-primary transition-colors" data-testid="mobile-nav-leistungen">{t.nav.services}</button>
-          <button onClick={() => scrollToSection("ueber-uns")} className="text-2xl font-serif text-foreground hover:text-primary transition-colors" data-testid="mobile-nav-about">{t.nav.about}</button>
-          <button onClick={() => scrollToSection("galerie")} className="text-2xl font-serif text-foreground hover:text-primary transition-colors" data-testid="mobile-nav-gallery">{t.nav.gallery}</button>
-          <button onClick={() => scrollToSection("kontakt")} className="text-2xl font-serif text-foreground hover:text-primary transition-colors" data-testid="mobile-nav-contact">{t.nav.contact}</button>
+        <div className="fixed inset-0 z-40 bg-[#111] flex flex-col items-center justify-center gap-10 md:hidden">
+          <div className="w-16 h-[1px] bg-primary mb-4"></div>
+          <button onClick={() => scrollToSection("leistungen")} className="text-3xl font-serif text-white hover:text-primary transition-colors duration-300" data-testid="mobile-nav-leistungen">{t.nav.services}</button>
+          <button onClick={() => scrollToSection("ueber-uns")} className="text-3xl font-serif text-white hover:text-primary transition-colors duration-300" data-testid="mobile-nav-about">{t.nav.about}</button>
+          <button onClick={() => scrollToSection("galerie")} className="text-3xl font-serif text-white hover:text-primary transition-colors duration-300" data-testid="mobile-nav-gallery">{t.nav.gallery}</button>
+          <button onClick={() => scrollToSection("kontakt")} className="text-3xl font-serif text-white hover:text-primary transition-colors duration-300" data-testid="mobile-nav-contact">{t.nav.contact}</button>
+          <div className="w-16 h-[1px] bg-primary mt-4"></div>
           <button
             onClick={() => scrollToSection("kontakt")}
-            className="mt-4 px-10 py-4 bg-primary text-primary-foreground uppercase tracking-widest text-sm font-medium"
+            className="px-12 py-4 bg-primary text-primary-foreground uppercase tracking-widest text-sm font-medium hover:bg-primary/90 transition-colors"
             data-testid="mobile-nav-cta"
           >
             {t.nav.cta}

@@ -26,7 +26,7 @@ export function Gallery() {
           <div className="w-24 h-[1px] bg-primary mx-auto"></div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-4 auto-rows-[300px]">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-4 md:auto-rows-[300px]">
           {galleryImages.map((img, idx) => (
             <GalleryItem key={idx} img={img} index={idx} />
           ))}
