@@ -40,8 +40,8 @@ export function About() {
             </div>
             
             <div className="mt-12">
-              <div className="font-serif text-2xl text-foreground">Isabella & Team</div>
-              <div className="text-sm uppercase tracking-widest text-primary mt-2">Creative Directors</div>
+              <div className="font-serif text-2xl text-foreground">Olga Dück</div>
+              <div className="text-sm uppercase tracking-widest text-primary mt-2">Gründerin & Geschäftsführerin</div>
             </div>
           </div>
         </div>

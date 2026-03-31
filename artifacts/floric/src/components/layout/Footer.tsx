@@ -39,7 +39,7 @@ export function Footer() {
         </div>
         
         <div className="pt-8 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-white/40 font-light tracking-wide">
-          <p>&copy; {new Date().getFullYear()} Floric Event Design. Alle Rechte vorbehalten.</p>
+          <p>&copy; {new Date().getFullYear()} Floric Event Design · Olga Dück. Alle Rechte vorbehalten.</p>
           <div className="flex gap-6">
             <Link href="#" className="hover:text-white transition-colors" data-testid="link-impressum">Impressum</Link>
             <Link href="#" className="hover:text-white transition-colors" data-testid="link-datenschutz">Datenschutz</Link>
