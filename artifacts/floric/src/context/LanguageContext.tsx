@@ -96,7 +96,7 @@ const de: Translations = {
   },
   hero: {
     tag: "Exklusives Eventdesign · Hamm & Umgebung",
-    langBadge: "Beratung auf Deutsch & Russisch · Консультация на русском языке",
+    langBadge: "Beratung auf Deutsch & Russisch",
     h1pre: "Wir verwandeln Eventhallen in",
     h1italic: "unvergessliche",
     h1post: "Erlebnisse",
@@ -172,7 +172,7 @@ const de: Translations = {
     title: "Lassen Sie uns sprechen",
     intro: "Jedes großartige Event beginnt mit einer Vision. Kontaktieren Sie uns für ein unverbindliches Erstgespräch – wir freuen uns auf Sie.",
     langLine1: "Wir beraten auf Deutsch und Russisch",
-    langLine2: "Мы говорим по-русски",
+    langLine2: "Persönliche Beratung auf Wunsch auch auf Russisch",
     addressTitle: "Adresse",
     contactTitle: "Kontakt",
     whatsapp: "WhatsApp Chat",
