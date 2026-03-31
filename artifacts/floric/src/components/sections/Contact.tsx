@@ -62,9 +62,16 @@ export function Contact() {
             <h2 className="text-4xl md:text-5xl font-serif mb-8 text-foreground">Lassen Sie uns sprechen</h2>
             <div className="w-16 h-[1px] bg-primary mb-12"></div>
             
-            <p className="text-muted-foreground font-light leading-relaxed mb-12">
-              Jedes großartige Event beginnt mit einer Vision. Kontaktieren Sie uns für ein unverbindliches Erstgespräch in unserem Studio.
+            <p className="text-muted-foreground font-light leading-relaxed mb-8">
+              Jedes großartige Event beginnt mit einer Vision. Kontaktieren Sie uns für ein unverbindliches Erstgespräch – wir freuen uns auf Sie.
             </p>
+            <div className="flex items-center gap-3 mb-12 py-4 px-5 border border-primary/30 bg-primary/5">
+              <span className="text-primary text-lg">🇩🇪 🇷🇺</span>
+              <p className="text-sm text-muted-foreground font-light">
+                Wir beraten auf <span className="text-foreground font-medium">Deutsch und Russisch</span><br/>
+                <span className="text-xs text-muted-foreground/70">Мы говорим по-русски</span>
+              </p>
+            </div>
 
             <div className="space-y-8">
               <div>

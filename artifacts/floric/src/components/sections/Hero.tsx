@@ -27,6 +27,7 @@ export function Hero() {
         className={`relative z-10 text-center text-white px-6 max-w-5xl mx-auto flex flex-col items-center mt-20 ${isVisible ? 'fade-in-section is-visible' : 'fade-in-section'}`}
       >
         <span className="text-primary uppercase tracking-[0.3em] mb-6 text-sm md:text-base font-medium">Exklusives Eventdesign · Hamm &amp; Umgebung</span>
+        <span className="text-white/60 tracking-widest text-xs mb-2 uppercase">Beratung auf Deutsch &amp; Russisch · Консультация на русском языке</span>
         <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif font-medium leading-tight mb-8 drop-shadow-lg">
           Wir verwandeln Eventhallen in <i className="text-primary font-serif">unvergessliche</i> Erlebnisse
         </h1>

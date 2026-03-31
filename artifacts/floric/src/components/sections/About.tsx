@@ -37,6 +37,9 @@ export function About() {
               <p>
                 Für uns ist Eleganz keine Frage des Budgets, sondern eine Philosophie der Reduktion auf das Wesentliche und der absoluten Hingabe an die Schönheit des Moments.
               </p>
+              <p>
+                Wir beraten Sie persönlich und herzlich – auf <strong className="text-foreground font-medium">Deutsch und Russisch</strong>. So können wir sicherstellen, dass jeder Wunsch wirklich verstanden und perfekt umgesetzt wird.
+              </p>
             </div>
             
             <div className="mt-12">
