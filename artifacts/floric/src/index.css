@@ -167,3 +167,33 @@ html {
   opacity: 1;
   transform: none;
 }
+
+@keyframes kenBurns {
+  from { transform: scale(1.08); }
+  to   { transform: scale(1); }
+}
+
+@keyframes heroSlideUp {
+  from { opacity: 0; transform: translateY(48px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes marqueeScroll {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+.hero-bg {
+  animation: kenBurns 9s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+
+.hero-anim-0 { animation: heroSlideUp 1.2s cubic-bezier(0.16, 1, 0.3, 1) 0.0s both; }
+.hero-anim-1 { animation: heroSlideUp 1.2s cubic-bezier(0.16, 1, 0.3, 1) 0.25s both; }
+.hero-anim-2 { animation: heroSlideUp 1.2s cubic-bezier(0.16, 1, 0.3, 1) 0.45s both; }
+.hero-anim-3 { animation: heroSlideUp 1.2s cubic-bezier(0.16, 1, 0.3, 1) 0.65s both; }
+.hero-anim-4 { animation: heroSlideUp 1.2s cubic-bezier(0.16, 1, 0.3, 1) 0.85s both; }
+
+.marquee-track {
+  animation: marqueeScroll 35s linear infinite;
+  will-change: transform;
+}

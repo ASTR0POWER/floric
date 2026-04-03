@@ -1,47 +1,72 @@
-import { useScrollFade } from "@/hooks/use-scroll-fade";
 import { useLanguage } from "@/context/LanguageContext";
 
 export function Hero() {
-  const { domRef, isVisible } = useScrollFade();
   const { t } = useLanguage();
 
   const scrollToContact = () => document.getElementById("kontakt")?.scrollIntoView({ behavior: "smooth" });
   const scrollToServices = () => document.getElementById("leistungen")?.scrollIntoView({ behavior: "smooth" });
 
   return (
-    <section className="relative h-[100dvh] w-full flex items-center justify-center overflow-hidden">
-      <div className="absolute inset-0 w-full h-full">
+    <section className="relative h-[100dvh] w-full flex items-end overflow-hidden">
+      <div className="absolute inset-0">
         <img
           src="/hero.jpg"
           alt="Elegante Hochzeitsdekoration"
-          className="w-full h-full object-cover object-center"
+          className="w-full h-full object-cover object-center hero-bg"
         />
-        <div className="absolute inset-0 bg-black/40"></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/45 to-black/10"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-black/25 to-transparent"></div>
       </div>
 
-      <div
-        ref={domRef as any}
-        className={`relative z-10 text-center text-white px-6 max-w-5xl mx-auto flex flex-col items-center mt-20 ${isVisible ? "fade-in-section is-visible" : "fade-in-section"}`}
-      >
-        <span className="text-white/80 uppercase tracking-[0.3em] mb-3 text-sm md:text-base font-medium">{t.hero.tag}</span>
-        <span className="text-white/55 tracking-widest text-xs mb-8 uppercase">{t.hero.langBadge}</span>
-        <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif font-medium leading-tight mb-8 drop-shadow-lg">
-          {t.hero.h1pre} <i className="text-white/70 font-serif">{t.hero.h1italic}</i> {t.hero.h1post}
+      <div className="absolute left-6 top-0 bottom-0 hidden lg:flex flex-col items-center justify-center gap-0 pointer-events-none">
+        <div className="w-[1px] h-32 bg-gradient-to-b from-transparent to-white/25"></div>
+        <div className="w-[1px] h-32 bg-gradient-to-b from-white/25 to-transparent mt-2"></div>
+      </div>
+
+      <div className="relative z-10 w-full pb-16 md:pb-20 lg:pb-24 px-8 md:px-14 lg:px-20">
+        <div className="hero-anim-0 mb-2">
+          <span className="text-white/55 uppercase tracking-[0.38em] text-[10px] md:text-[11px] font-medium">
+            {t.hero.tag}
+          </span>
+        </div>
+        <div className="hero-anim-1 mb-6">
+          <span className="text-white/30 tracking-[0.28em] text-[9px] uppercase">
+            {t.hero.langBadge}
+          </span>
+        </div>
+
+        <h1 className="font-serif font-medium leading-[0.9] mb-10">
+          <span
+            className="hero-anim-2 block text-white"
+            style={{ fontSize: "clamp(2.8rem, 7vw, 8.5rem)" }}
+          >
+            {t.hero.h1pre}
+          </span>
+          <span
+            className="hero-anim-3 block text-white/60 italic"
+            style={{ fontSize: "clamp(2.8rem, 7vw, 8.5rem)" }}
+          >
+            {t.hero.h1italic}
+          </span>
+          <span
+            className="hero-anim-3 block text-white"
+            style={{ fontSize: "clamp(2.8rem, 7vw, 8.5rem)" }}
+          >
+            {t.hero.h1post}
+          </span>
         </h1>
-        <p className="text-lg md:text-xl text-white/90 max-w-2xl font-light leading-relaxed mb-12 drop-shadow">
-          {t.hero.subtitle}
-        </p>
-        <div className="flex flex-col sm:flex-row gap-6">
+
+        <div className="hero-anim-4 flex flex-col sm:flex-row gap-4">
           <button
             onClick={scrollToContact}
-            className="px-10 py-4 bg-primary text-primary-foreground hover:bg-primary/90 transition-colors duration-300 uppercase tracking-widest text-sm font-medium"
+            className="px-10 py-4 bg-white text-black hover:bg-white/88 transition-colors duration-300 uppercase tracking-widest text-xs font-medium w-fit"
             data-testid="btn-hero-contact"
           >
             {t.hero.cta1}
           </button>
           <button
             onClick={scrollToServices}
-            className="px-10 py-4 border border-white/50 text-white hover:bg-white hover:text-black transition-all duration-300 uppercase tracking-widest text-sm font-medium backdrop-blur-sm"
+            className="px-10 py-4 border border-white/35 text-white hover:border-white/70 hover:bg-white/8 transition-all duration-300 uppercase tracking-widest text-xs font-medium w-fit backdrop-blur-sm"
             data-testid="btn-hero-services"
           >
             {t.hero.cta2}
@@ -49,8 +74,14 @@ export function Hero() {
         </div>
       </div>
 
-      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce">
-        <div className="w-[1px] h-16 bg-gradient-to-b from-white to-transparent mx-auto"></div>
+      <div className="absolute bottom-8 right-8 hidden md:flex flex-col items-center gap-3 pointer-events-none">
+        <span
+          className="text-white/25 text-[9px] uppercase tracking-[0.3em]"
+          style={{ writingMode: "vertical-rl" }}
+        >
+          scroll
+        </span>
+        <div className="w-[1px] h-14 bg-gradient-to-b from-white/35 to-transparent"></div>
       </div>
     </section>
   );
