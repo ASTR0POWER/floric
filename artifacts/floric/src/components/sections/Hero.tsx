@@ -23,10 +23,10 @@ export function Hero() {
         ref={domRef as any}
         className={`relative z-10 text-center text-white px-6 max-w-5xl mx-auto flex flex-col items-center mt-20 ${isVisible ? "fade-in-section is-visible" : "fade-in-section"}`}
       >
-        <span className="text-primary uppercase tracking-[0.3em] mb-3 text-sm md:text-base font-medium">{t.hero.tag}</span>
+        <span className="text-white/80 uppercase tracking-[0.3em] mb-3 text-sm md:text-base font-medium">{t.hero.tag}</span>
         <span className="text-white/55 tracking-widest text-xs mb-8 uppercase">{t.hero.langBadge}</span>
         <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif font-medium leading-tight mb-8 drop-shadow-lg">
-          {t.hero.h1pre} <i className="text-primary font-serif">{t.hero.h1italic}</i> {t.hero.h1post}
+          {t.hero.h1pre} <i className="text-white/70 font-serif">{t.hero.h1italic}</i> {t.hero.h1post}
         </h1>
         <p className="text-lg md:text-xl text-white/90 max-w-2xl font-light leading-relaxed mb-12 drop-shadow">
           {t.hero.subtitle}

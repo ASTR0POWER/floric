@@ -59,39 +59,39 @@
   --elevate-1: rgba(0,0,0, .03);
   --elevate-2: rgba(0,0,0, .08);
 
-  /* Ivory / Cream */
-  --background: 36 33% 96%;
-  --foreground: 0 0% 10%;
-  
-  /* Blush Parchment */
-  --card: 36 32% 93%;
-  --card-foreground: 0 0% 10%;
-  --card-border: 44 30% 85%;
+  /* Pure White */
+  --background: 0 0% 100%;
+  --foreground: 0 0% 7%;
 
-  --popover: 36 33% 96%;
-  --popover-foreground: 0 0% 10%;
-  --popover-border: 44 30% 85%;
+  /* Soft Light Grey */
+  --card: 0 0% 96%;
+  --card-foreground: 0 0% 7%;
+  --card-border: 0 0% 88%;
 
-  /* Antique Gold */
-  --primary: 44 54% 54%;
-  --primary-foreground: 36 33% 96%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 0 0% 7%;
+  --popover-border: 0 0% 88%;
 
-  /* Charcoal */
-  --secondary: 0 0% 15%;
-  --secondary-foreground: 36 33% 96%;
+  /* Black — replaces Gold */
+  --primary: 0 0% 8%;
+  --primary-foreground: 0 0% 100%;
 
-  --muted: 36 20% 90%;
-  --muted-foreground: 0 0% 40%;
+  /* Deep Charcoal */
+  --secondary: 0 0% 9%;
+  --secondary-foreground: 0 0% 98%;
 
-  --accent: 44 54% 54%;
-  --accent-foreground: 36 33% 96%;
+  --muted: 0 0% 93%;
+  --muted-foreground: 0 0% 48%;
+
+  --accent: 0 0% 8%;
+  --accent-foreground: 0 0% 100%;
 
   --destructive: 0 84% 60%;
-  --destructive-foreground: 36 33% 96%;
+  --destructive-foreground: 0 0% 100%;
 
-  --border: 44 30% 85%;
-  --input: 44 30% 85%;
-  --ring: 44 54% 54%;
+  --border: 0 0% 88%;
+  --input: 0 0% 88%;
+  --ring: 0 0% 8%;
 
   --app-font-sans: 'Plus Jakarta Sans', sans-serif;
   --app-font-serif: 'Cormorant Garamond', serif;
@@ -108,37 +108,35 @@
   --elevate-1: rgba(255,255,255, .04);
   --elevate-2: rgba(255,255,255, .09);
 
-  /* Deep Charcoal */
-  --background: 0 0% 10%;
-  --foreground: 36 33% 96%;
-  
-  --card: 0 0% 14%;
-  --card-foreground: 36 33% 96%;
-  --card-border: 0 0% 25%;
+  --background: 0 0% 7%;
+  --foreground: 0 0% 96%;
 
-  --popover: 0 0% 10%;
-  --popover-foreground: 36 33% 96%;
-  --popover-border: 0 0% 25%;
+  --card: 0 0% 11%;
+  --card-foreground: 0 0% 96%;
+  --card-border: 0 0% 22%;
 
-  /* Antique Gold */
-  --primary: 44 54% 54%;
-  --primary-foreground: 0 0% 10%;
+  --popover: 0 0% 7%;
+  --popover-foreground: 0 0% 96%;
+  --popover-border: 0 0% 22%;
 
-  --secondary: 36 33% 96%;
-  --secondary-foreground: 0 0% 10%;
+  --primary: 0 0% 96%;
+  --primary-foreground: 0 0% 7%;
 
-  --muted: 0 0% 20%;
-  --muted-foreground: 36 20% 80%;
+  --secondary: 0 0% 96%;
+  --secondary-foreground: 0 0% 7%;
 
-  --accent: 44 54% 54%;
-  --accent-foreground: 0 0% 10%;
+  --muted: 0 0% 18%;
+  --muted-foreground: 0 0% 65%;
+
+  --accent: 0 0% 96%;
+  --accent-foreground: 0 0% 7%;
 
   --destructive: 0 62% 30%;
-  --destructive-foreground: 36 33% 96%;
+  --destructive-foreground: 0 0% 96%;
 
-  --border: 0 0% 25%;
-  --input: 0 0% 25%;
-  --ring: 44 54% 54%;
+  --border: 0 0% 22%;
+  --input: 0 0% 22%;
+  --ring: 0 0% 96%;
 }
 
 @layer base {
@@ -149,7 +147,7 @@
   body {
     @apply font-sans antialiased bg-background text-foreground;
   }
-  
+
   h1, h2, h3, h4, h5, h6 {
     @apply font-serif font-medium tracking-wide;
   }

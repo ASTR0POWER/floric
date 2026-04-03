@@ -28,7 +28,7 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="uppercase tracking-widest text-xs font-medium text-primary mb-6">{t.footer.navTitle}</h4>
+            <h4 className="uppercase tracking-widest text-xs font-medium text-white/40 mb-6">{t.footer.navTitle}</h4>
             <ul className="space-y-4 text-white/70 font-light text-sm">
               <li><button onClick={scroll("leistungen")} className="hover:text-white transition-colors" data-testid="footer-leistungen">{t.footer.navLinks.services}</button></li>
               <li><button onClick={scroll("ueber-uns")} className="hover:text-white transition-colors" data-testid="footer-about">{t.footer.navLinks.about}</button></li>
@@ -38,7 +38,7 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="uppercase tracking-widest text-xs font-medium text-primary mb-6">{t.footer.socialTitle}</h4>
+            <h4 className="uppercase tracking-widest text-xs font-medium text-white/40 mb-6">{t.footer.socialTitle}</h4>
             <ul className="space-y-4 text-white/70 font-light text-sm">
               <li><a href="#" className="hover:text-white transition-colors" data-testid="footer-instagram">Instagram</a></li>
               <li><a href="#" className="hover:text-white transition-colors" data-testid="footer-pinterest">Pinterest</a></li>
