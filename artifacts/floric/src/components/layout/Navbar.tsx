@@ -1,6 +1,62 @@
 import { useState, useEffect } from "react";
 import { Link } from "wouter";
 import { useLanguage } from "@/context/LanguageContext";
+import type { Language } from "@/context/LanguageContext";
+
+const LANGS: Language[] = ["de", "ru", "en"];
+
+function GlobeIcon({ className }: { className?: string }) {
+  return (
+    <svg
+      width="13"
+      height="13"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className={className}
+    >
+      <circle cx="12" cy="12" r="10" />
+      <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+      <path d="M2 12h20" />
+    </svg>
+  );
+}
+
+function LangSwitcher({
+  lang,
+  setLang,
+  onDark,
+}: {
+  lang: Language;
+  setLang: (l: Language) => void;
+  onDark: boolean;
+}) {
+  const base = onDark ? "text-white" : "text-foreground";
+  const active = onDark ? "opacity-100" : "opacity-100";
+  const inactive = "opacity-30 hover:opacity-60";
+
+  return (
+    <div className={`flex items-center gap-1.5 ${base}`} data-testid="lang-switcher">
+      <GlobeIcon className="opacity-50 shrink-0" />
+      {LANGS.map((l, i) => (
+        <span key={l} className="flex items-center gap-1.5">
+          {i > 0 && <span className="opacity-20 select-none text-xs">|</span>}
+          <button
+            onClick={() => setLang(l)}
+            className={`text-xs uppercase tracking-widest font-medium transition-opacity duration-200 ${lang === l ? active : inactive}`}
+            data-testid={`btn-lang-${l}`}
+            title={l === "de" ? "Deutsch" : l === "ru" ? "Русский" : "English"}
+          >
+            {l.toUpperCase()}
+          </button>
+        </span>
+      ))}
+    </div>
+  );
+}
 
 export function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -53,14 +109,7 @@ export function Navbar() {
             <button onClick={() => scrollToSection("ueber-uns")} className={`text-sm uppercase tracking-widest hover:text-primary transition-colors duration-300 ${navTextClass}`} data-testid="nav-about">{t.nav.about}</button>
             <button onClick={() => scrollToSection("galerie")} className={`text-sm uppercase tracking-widest hover:text-primary transition-colors duration-300 ${navTextClass}`} data-testid="nav-gallery">{t.nav.gallery}</button>
 
-            <button
-              onClick={() => setLang(lang === "de" ? "ru" : "de")}
-              className={`text-xs uppercase tracking-widest border px-3 py-1.5 transition-all duration-300 font-medium ${isScrolled ? "border-primary/40 text-primary hover:bg-primary hover:text-primary-foreground" : "border-white/40 text-white/80 hover:bg-white/20"}`}
-              data-testid="btn-lang-toggle"
-              title={lang === "de" ? "Switch to Russian" : "Auf Deutsch wechseln"}
-            >
-              {lang === "de" ? "RU" : "DE"}
-            </button>
+            <LangSwitcher lang={lang} setLang={setLang} onDark={!isScrolled} />
 
             <button onClick={() => scrollToSection("kontakt")} className={`px-6 py-3 border transition-all duration-300 text-sm uppercase tracking-widest ${ctaBorderClass}`} data-testid="nav-contact">
               {t.nav.cta}
@@ -68,13 +117,7 @@ export function Navbar() {
           </nav>
 
           <div className="flex md:hidden items-center gap-3">
-            <button
-              onClick={() => setLang(lang === "de" ? "ru" : "de")}
-              className={`text-xs uppercase tracking-widest border px-2.5 py-1 transition-all duration-300 font-medium ${isScrolled ? "border-primary/40 text-primary" : "border-white/40 text-white/80"}`}
-              data-testid="btn-lang-toggle-mobile"
-            >
-              {lang === "de" ? "RU" : "DE"}
-            </button>
+            <LangSwitcher lang={lang} setLang={setLang} onDark={!isScrolled} />
             <button
               onClick={() => setMobileOpen(!mobileOpen)}
               className="flex flex-col gap-1.5 p-2"
@@ -91,15 +134,16 @@ export function Navbar() {
 
       {mobileOpen && (
         <div className="fixed inset-0 z-40 bg-[#111] flex flex-col items-center justify-center gap-10 md:hidden">
-          <div className="w-16 h-[1px] bg-primary mb-4"></div>
-          <button onClick={() => scrollToSection("leistungen")} className="text-3xl font-serif text-white hover:text-primary transition-colors duration-300" data-testid="mobile-nav-leistungen">{t.nav.services}</button>
-          <button onClick={() => scrollToSection("ueber-uns")} className="text-3xl font-serif text-white hover:text-primary transition-colors duration-300" data-testid="mobile-nav-about">{t.nav.about}</button>
-          <button onClick={() => scrollToSection("galerie")} className="text-3xl font-serif text-white hover:text-primary transition-colors duration-300" data-testid="mobile-nav-gallery">{t.nav.gallery}</button>
-          <button onClick={() => scrollToSection("kontakt")} className="text-3xl font-serif text-white hover:text-primary transition-colors duration-300" data-testid="mobile-nav-contact">{t.nav.contact}</button>
-          <div className="w-16 h-[1px] bg-primary mt-4"></div>
+          <div className="w-16 h-[1px] bg-white/20 mb-4"></div>
+          <button onClick={() => scrollToSection("leistungen")} className="text-3xl font-serif text-white hover:opacity-60 transition-opacity duration-300" data-testid="mobile-nav-leistungen">{t.nav.services}</button>
+          <button onClick={() => scrollToSection("ueber-uns")} className="text-3xl font-serif text-white hover:opacity-60 transition-opacity duration-300" data-testid="mobile-nav-about">{t.nav.about}</button>
+          <button onClick={() => scrollToSection("galerie")} className="text-3xl font-serif text-white hover:opacity-60 transition-opacity duration-300" data-testid="mobile-nav-gallery">{t.nav.gallery}</button>
+          <button onClick={() => scrollToSection("kontakt")} className="text-3xl font-serif text-white hover:opacity-60 transition-opacity duration-300" data-testid="mobile-nav-contact">{t.nav.contact}</button>
+          <div className="w-16 h-[1px] bg-white/20 mt-4"></div>
+          <LangSwitcher lang={lang} setLang={setLang} onDark={true} />
           <button
             onClick={() => scrollToSection("kontakt")}
-            className="px-12 py-4 bg-primary text-primary-foreground uppercase tracking-widest text-sm font-medium hover:bg-primary/90 transition-colors"
+            className="px-12 py-4 bg-white text-black uppercase tracking-widest text-sm font-medium hover:bg-white/90 transition-colors"
             data-testid="mobile-nav-cta"
           >
             {t.nav.cta}
