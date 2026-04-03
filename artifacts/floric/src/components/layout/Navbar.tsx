@@ -109,11 +109,11 @@ export function Navbar() {
             <button onClick={() => scrollToSection("ueber-uns")} className={`text-sm uppercase tracking-widest hover:text-primary transition-colors duration-300 ${navTextClass}`} data-testid="nav-about">{t.nav.about}</button>
             <button onClick={() => scrollToSection("galerie")} className={`text-sm uppercase tracking-widest hover:text-primary transition-colors duration-300 ${navTextClass}`} data-testid="nav-gallery">{t.nav.gallery}</button>
 
-            <LangSwitcher lang={lang} setLang={setLang} onDark={!isScrolled} />
-
             <button onClick={() => scrollToSection("kontakt")} className={`px-6 py-3 border transition-all duration-300 text-sm uppercase tracking-widest ${ctaBorderClass}`} data-testid="nav-contact">
               {t.nav.cta}
             </button>
+
+            <LangSwitcher lang={lang} setLang={setLang} onDark={!isScrolled} />
           </nav>
 
           <div className="flex md:hidden items-center gap-3">
